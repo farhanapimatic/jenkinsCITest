@@ -70,7 +70,7 @@ public class HelloworldController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5453308987169571138L;
+            private static final long serialVersionUID = 4667520729068246940L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
