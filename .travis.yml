@@ -1,0 +1,8 @@
+language: csharp
+solution: HelloWorld4.sln
+install:
+  - nuget restore HelloWorld4.sln
+  - nuget install NUnit.Runners -Version 3.2.1 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release HelloWorld4.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.2.1/tools/nunit3-console.exe ./HelloWorld4.Tests/bin/Release/HelloWorld4.Tests.dll
