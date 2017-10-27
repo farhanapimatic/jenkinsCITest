@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class HelloWorldResponse 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5300580963943418321L;
+    private static final long serialVersionUID = 5324685540431461175L;
     private String message;
     /** GETTER
      * TODO: Write general description for this method
